@@ -17,14 +17,14 @@ class Mainframe():
     def __init__(self):
         self.sentence_embedder = Embedder()
         self.cols = ["wuc", "wc_code", "updown_ind", "action_taken", "trans_code", "type_maf_code", "type_maint_code", "malfunction_code"]
-        wuc_class = Classifier("wuc", "./classifiers/wuc_clf.pkl")
-        wc_code_class = Classifier("wc_code", "./classifiers/wc_code_clf.pkl")
-        updown_ind_class = Classifier("updown_ind", "./classifiers/updown_ind_clf.pkl")
-        action_taken_class = Classifier("action_taken", "./classifiers/action_taken_clf.pkl")
-        trans_code_class = Classifier("trans_code", "./classifiers/trans_code_clf.pkl")
-        type_maf_code_class = Classifier("type_maf_code", "./classifiers/type_maf_code_clf.pkl")
-        type_maint_code_class = Classifier("type_maint_code", "./classifiers/type_maint_code_clf.pkl")
-        malfunction_code_class = Classifier("malfunction_code", "./classifiers/malfunction_code_clf.pkl")
+        wuc_class = Classifier("wuc", "./trained_classifiers/wuc_clf.pkl")
+        wc_code_class = Classifier("wc_code", "./trained_classifiers/wc_code_clf.pkl")
+        updown_ind_class = Classifier("updown_ind", "./trained_classifiers/updown_ind_clf.pkl")
+        action_taken_class = Classifier("action_taken", "./trained_classifiers/action_taken_clf.pkl")
+        trans_code_class = Classifier("trans_code", "./trained_classifiers/trans_code_clf.pkl")
+        type_maf_code_class = Classifier("type_maf_code", "./trained_classifiers/type_maf_code_clf.pkl")
+        type_maint_code_class = Classifier("type_maint_code", "./trained_classifiers/type_maint_code_clf.pkl")
+        malfunction_code_class = Classifier("malfunction_code", "./trained_classifiers/malfunction_code_clf.pkl")
         self.classifiers = [wuc_class, wc_code_class, updown_ind_class, action_taken_class, trans_code_class, type_maf_code_class, type_maint_code_class, malfunction_code_class]
 
     def get_datalog(self, user_input):
