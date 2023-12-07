@@ -8,7 +8,7 @@ This project was created for Notre Dame's EG 35101 Industry and Community-Based 
 
 Contributers: Dagny Brand (dbrand@nd.edu), Jaylen Choi (jchoi22@nd.edu), Vinny Galassi (vgalassi@nd.edu), Gabby Klee (gklee@nd.edu), Richard Montoya (rmontoya@nd.edu), Joseph Park (jpark29@nd.edu), Tram Trinh (htrinh@nd.edu), Anthony Tsiantis (atsianti@nd.edu), Kevin Xue (kxue2@nd.edu), and Swindar Zhou (kzhou3@nd.edu)
 
-# Working with our Classifiers
+# Working with the Classifiers
 
 This project uses a Scalable Linear Support Vector Machine (SVC) classifier from the [sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) library. The classifier is originally laid out in [classifer_colab](classifier_colab.ipynb). The data used to train the model was provided by Boeing. 
 
